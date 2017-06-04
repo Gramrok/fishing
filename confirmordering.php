@@ -20,7 +20,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['adminmode'])) {
     file_put_contents('files/ordersphonenumbers8GE72dgr73D12.txt', $phonenumber . "\n", FILE_APPEND);
     file_put_contents('files/ordersemails8GE72dgr73D12.txt', $email . "\n", FILE_APPEND);
     file_put_contents('files/ordersaddresses8GE72dgr73D12.txt', $address . "\n", FILE_APPEND);
-    file_put_contents('files/ordersdates.txt', $date . "\n", FILE_APPEND);
+    file_put_contents('files/ordersdates8GE72dgr73D12.txt', $date . "\n", FILE_APPEND);
     $_SESSION['basketcounter'] = 0;
     echo '<script>location.href="thankyou.php"</script>';
 }
