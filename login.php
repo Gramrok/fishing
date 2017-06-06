@@ -8,6 +8,10 @@
                <h2><a class="post_ttl" title="АВТОРИЗАЦИЯ">АВТОРИЗАЦИЯ</a></h2>
                <div id="basket" style="background:none;">
                   <?php
+                  if (isset($_SESSION['login'])) {
+							echo '<script>location.href="index.php"</script>';
+						}
+					   else {
                      $login     = htmlspecialchars($_POST['login']);
                      $password  = htmlspecialchars($_POST['password']);
                      $logins    = file('files/logins7d3HFH28dsF3.txt', FILE_IGNORE_NEW_LINES);
@@ -23,7 +27,8 @@
                      	}
                      }
                      echo '<p align="center" style="font-size:28px;color:#fff;"><b>Ошибка ввода, Попробуйте снова</b></p>';
-                     ?>
+                  }   
+                  ?>
                </div>
             </div>
          </div>
