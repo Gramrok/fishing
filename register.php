@@ -21,6 +21,7 @@
 								if ($login==$logins[$i])
 								{
 									$_SESSION['login_already_exist']=true;
+									$_SESSION['login2']=$_POST['login'];
 									echo '<script>location.href="registration.php"</script>';
 									exit;
 								}
