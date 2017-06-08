@@ -8,10 +8,10 @@
                <h2><a class="post_ttl" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</a></h2>
                <div id="form_reg">
                   <form method="post" action="register.php">
-                  <p align="center">Логин</p>
-                  <input type="text" name="login" placeholder="Логин" required>
-                  <p align="center">Пароль</p>
-                  <input type="password" name="password" placeholder="Пароль" required>
+                   <p align="center">Логин (не менее 6 символов)</p>
+                   <input type="text" name="login" minlength="6" placeholder="Логин (не менее 6 символов)" required>
+                   <p align="center">Пароль (не менее 8 символов)</p>
+                   <input type="password" name="password" minlength="8" placeholder="Пароль (не менее 8 символов)" required>
                   <br>
                   <br>
                   <p align="center"><input style="height: 50px; width: 250px; font-size: 22px; cursor:pointer;" type="submit" value="Зарегистрироваться"></p>
