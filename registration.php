@@ -9,7 +9,7 @@
                <div id="form_reg">
                   <form method="post" action="register.php">
                    <p align="center">Логин (не менее 6 символов)</p>
-                   <input type="text" name="login" class="pod" value="<?php echo $_SESSION['login2'] ?>" minlength="6" placeholder="Логин (не менее 6 символов)" required>
+                   <input type="text" name="login" class="pod" value="<?php if(!empty($_SESSION['login2'])) { echo $_SESSION['login2']; } ?>" minlength="6" placeholder="Логин (не менее 6 символов)" required>
                    <p align="center">Пароль (не менее 8 символов)</p>
                    <input type="password" name="password" minlength="8" placeholder="Пароль (не менее 8 символов)" required>
                   <br>
